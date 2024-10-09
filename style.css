@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#drop-area {
+  border: 2px dashed #3498db;
+  padding: 40px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+#drop-area:hover {
+  border-color: #2980b9;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#drop-area p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* ボタンを縦に並べる */
+  align-items: center; /* ボタンを中央揃え */
+  gap: 100px; /* ボタン間のスペース（20px） */
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #2980b9;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  font-size: 16px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#preview img {
+  max-width: 200px;
+  margin: 10px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+}
+.hidden {
+  display: none;
+}
+
+#reset-btn {
+  background-color: white;
+  color: #3498db;
+  border: 1px solid #3498db;
+  padding: 5px 10px;
+}
+
+#reset-btn:hover {
+  background-color: #dbdbdb;
+}
+
+#resize-btn {
+  font-weight: bold;
+}
