@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像のサイズ変更</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>画像のサイズ変更</h1>
+
+    <div id="drop-area">
+      <p>ここに画像をドラッグ＆ドロップするか、ファイルを選択してください</p>
+      <input type="file" id="file-input" multiple accept="image/*" />
+    </div>
+
+    <label for="width">幅:</label>
+    <input type="number" id="width" value="800" min="1" />px　
+    <label for="height">　高さ:</label>
+    <input type="number" id="height" value="450" min="1" />px
+    <br />
+    <div id="preview"></div>
+    <br />
+    <div class="button-container">
+      <button id="reset-btn" class="hidden">画像をリセット</button>
+      <button id="resize-btn">サイズ変更された画像をダウンロード</button>
+    </div>
+
+    <!-- JSZip ライブラリの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
